@@ -1,0 +1,11 @@
+[Unit]
+Description=Travel Project Gunicorn
+
+[Service]
+User=root
+Type=simple
+WorkingDirectory=/var/www/application
+ExecStart=/var/www/application/start.sh
+
+[Install]
+WantedBy=default.target
